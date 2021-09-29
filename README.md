@@ -1,6 +1,8 @@
 # Diabetes machine learning prediction Django WebApp
 
-https://assets.entrepreneur.com/content/3x2/2000/20200427140712-the-meter-3357128.jpeg
+
+![name-of-you-image](https://assets.entrepreneur.com/content/3x2/2000/20200427140712-the-meter-3357128.jpeg)
+
 
 This webapp deals with the prediction of diabetes in female population using parameters such as:
 
