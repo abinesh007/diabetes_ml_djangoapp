@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Diabetes AI App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.p1_cqxEK4R8VXtlvQoqGrgHaEK%26pid%3DApi&f=1');
+}
+.container{
+  width:700px; 
+}
+
+.jumbotron bg-primary{
+  color:#ffff;
+  font-family: Century Gothic;
+  size:"30px";   
+}
+
+form{
+		background-color: #FF8C00;
+		border-style: groove;
+		width: 100%;
+  	height: 100%;
+		border: 2px  whitesmoke;
+  	border-radius: 15px;
+}
+
+input[type=text] {
+  		width: 96%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		box-sizing: border-box;
+  		border-radius: 10px;
+}
+
+h3,h4{
+	color: whitesmoke;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h2 class="jumbotron bg-primary" style = "font-family: Century Gothic ; width: 100% ; display: flex; justify-content: center;">Diabetes ML Predictor</h2>
+  <br><br>
+
+  <form class="form-horizontal" action="{% url 'result_page' %}">
+
+  	<div align="center">
+  		<br>
+  		<h3>Enter the Details of the Patient(Female)</h3>
+  		<br>
+
+  		<div class="row">
+  			<div class="column">
+  				<h4>Number of times Pregnant : </h4>
+  				<input type="text"  required name="Pr"> <br> <br>
+
+					<h4>Diastolic Blood Pressure (mm Hg) : </h4>
+					<input type="text"  required name="Bp"> <br> <br>
+
+					<h4>Triceps Skin Fold Thickness (mm) : </h4>
+					<input type="text"  required name="St"> <br> <br>
+				</div>
+
+
+
+  			<div class="column">
+  				<h4>2-Hour Serum Insulin (mu U/ml) : </h4>
+					<input type="text"  required name="In"> <br> <br>
+
+					<h4>Body mass index : </h4>
+					<input type="text"  required name="Bm"> <br> <br>
+
+					<h4>Age (in years)	: </h4>
+					<input type="text"  required name="Ag"> <br> <br></div>
+				</div>
+
+
+				<h4>Plasma Glucose conc a 2 hrs in an oral Glucose tolerance test :</h4>
+					<input type="text"  required name="Gl"> <br> <br>
+
+				<h4>Diabetes Pedigree Function : </h4>
+					<input type="text"  required name="Dp"> <br> <br>
+
+  		
+
+			
+			{% csrf_token %}
+  	</div>
+  	<div align="center">
+  		<input type="submit" class="btn btn-success" value="submit" align="center">
+  	</div>  	
+    
+	</form>
+</div>
+</body>
+</html>

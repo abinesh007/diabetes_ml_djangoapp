@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.N6sL6Ie1p0xIwht5KDgcoAHaEK%26pid%3DApi&f=1');
+}
+
+.second-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #2F4F2F;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,1);
+  border-radius: 10px;
+}
+
+.header, .info, .header-text, .table{
+  color: #ffff;
+}
+
+.home{
+  color: orange;
+}
+
+	</style>
+</head>
+<body>
+  <div class = "second-main" style = "height: 100% , width : 100%;">
+            <nav>
+                <ul style = "padding-right: 2%;" class = "main-nav">
+                    <a class="home" href="{% url 'home_page' %}">Back to Home</a>              
+                </ul>
+               
+            </nav>
+            
+
+            <div class = "info">
+            
+                <row style = "width: 100% ; display: flex; justify-content: center;">
+                    <h2 class = "header-text">Model Prediction</h2>
+                </row>
+
+                <row style = "width: 100% ; display: flex; justify-content: center;">
+                    <img src={{link}}>
+                </row>
+
+                <row style = "width: 100%; display: flex; justify-content: center;">
+                    <div align="center">
+                      <h4>Patient Details:</h4><br>
+                      <h5>No of times Pregnant: {{lis.preg}} | Glucose: {{lis.gluc}} |
+                        Blood Pressure: {{lis.bp}} mm Hg | Skin Thickness: {{lis.skin}} mm <br>
+                        Serum Insulin: {{lis.insu}} mu U/ml | BMI: {{lis.bmi}} |
+                        DP Function: {{lis.func}} | Age: {{lis.age}} yrs</h5>
+                    </div>
+                </row>
+                
+
+                <row style = "width: 100%; display: flex; justify-content: center;">
+                    <h4>The Patient has {{res}} with the probability of 75.3%.</h4>
+                </row>
+                <div style = "width: 100% ; display: flex; justify-content: center;">
+                    <h6>Based on the data collected from the National Institute of Diabetes and Digestive and Kidney Diseases.</h6>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
