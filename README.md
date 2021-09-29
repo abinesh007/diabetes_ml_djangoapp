@@ -1,7 +1,8 @@
 # Diabetes machine learning prediction Django WebApp
 
+https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.explicit.bing.net%2Fth%3Fid%3DOIP.4IMu_xldqOYpVCZfdis4RAHaD4%26pid%3DApi&f=1
 
-!(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.explicit.bing.net%2Fth%3Fid%3DOIP.4IMu_xldqOYpVCZfdis4RAHaD4%26pid%3DApi&f=1)
+
 This webapp deals with the prediction of diabetes in female population using parameters such as:
 
 
