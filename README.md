@@ -1,4 +1,4 @@
-# diabetes machine learning prediction Django WebApp
+# Diabetes machine learning prediction Django WebApp
 
 This webapp deals with the prediction of diabetes in female population using parameters such as:
 
@@ -19,19 +19,19 @@ where,
 1--> diabetes
 
 
-#Home page
+# Home page
 
 
-#prediction 1 (diabetes)
-
-
-
-#prediction 2 (no diabetes)
+# prediction 1 (diabetes)
 
 
 
+# prediction 2 (no diabetes)
 
 
-#Datasets
+
+
+
+# Datasets
 
 Kaggle: https://www.kaggle.com/mathchi/diabetes-data-set
